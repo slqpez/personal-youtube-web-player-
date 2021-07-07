@@ -1,0 +1,7 @@
+.video:first-of-type > div > div > iframe {
+    width: 500px;
+  }
+  
+  iframe {
+    border-radius: 15px;
+  }
