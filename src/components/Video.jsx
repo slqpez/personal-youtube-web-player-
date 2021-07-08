@@ -1,21 +1,24 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./video.css";
+import moment from "moment";
 
 export default function Video({ item }) {
+
+
   return (
     <div className="video">
       <ReactPlayer
         controls
-        width="110px"
-        height="110px"
+        width="auto"
+        height="auto"
         key={item.id.videoId}
         url={`https://www.youtube.com/watch?v=${item.id.videoId}`}
       />
       <div>
-        <p>{item.snippet.channelTitle}</p>
-        <p>{item.snippet.title}</p>
-        <p>{item.snippet.publishTime}</p>
+        <p className="video-title">{item.snippet.title}</p>
+        <p className="video-channel">{item.snippet.channelTitle}</p>
+        <p className="video-time">{moment(`${item.snippet.publishTime}`, "YYYYMMDD").fromNow()}</p>
       </div>
     </div>
   );

@@ -11,10 +11,8 @@ function App() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-  
     getVideos(query)
       .then((videos) => {
-        console.log(videos)
         setVideos(videos.slice(1, videos.length));
         setMainVideo(videos[0]);
       })

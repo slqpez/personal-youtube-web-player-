@@ -49,18 +49,20 @@ form {
 }
 .mainVideo > .video > div > div > iframe {
   width: 600px;
+  max-width: 600px;
   height: 300px;
 }
 
 .mainVideo > .video > div{
-  margin-bottom: 200px;
+  margin-bottom: 10px;
 }
 
 .mainSection {
   width: 65%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  border-right: 1px solid white;
 }
 
 .listSection {
@@ -70,3 +72,24 @@ form {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+
+@media (max-width: 1100px){
+  .App{
+    flex-direction: column;
+  }
+  .mainSection{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid white;
+    margin-bottom: 1em;
+    align-items: center;
+    padding-bottom: 2em;
+
+  }
+
+  .mainVideo .video > div{
+     margin: 0 auto;
+  }
+}
+

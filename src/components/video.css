@@ -1,5 +1,6 @@
 iframe {
   border-radius: 15px;
+  height:auto;
 }
 
 .video{
@@ -7,6 +8,34 @@ iframe {
   flex-direction: column;
   gap:1em;
   color:#fff;
+  margin-bottom: 1.3em;
 }
 
+.video > div > div > iframe{
+  height:100px;
+  width:200px;
+}
+
+
+
+.video-title{
+  font-weight: bold;
+}
+
+.video-channel{
+  font-weight: 300;
+}
+
+.video-time{
+  font-size: .8em;
+  font-weight: 200;
+}
+
+.mainVideo .video-title{
+  font-size: 1.5em;
+}
+
+.mainVideo .video-channel{
+  font-size: 1.3em;
+}
 
