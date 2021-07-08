@@ -5,12 +5,14 @@
 
 .App {
   background-color: var(--background-color);
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   overflow-y: scroll;
   padding: 2em;
+  display: flex;
+  width: 100vw;
+  overflow-x: hidden;
 }
-
-
 
 input {
   background-color: var(--input-bg);
@@ -44,4 +46,27 @@ form {
 
 .btn-search:hover {
   transform: scale(0.9);
+}
+.mainVideo > .video > div > div > iframe {
+  width: 600px;
+  height: 300px;
+}
+
+.mainVideo > .video > div{
+  margin-bottom: 200px;
+}
+
+.mainSection {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listSection {
+  width: 35%;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

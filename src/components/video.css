@@ -1,7 +1,12 @@
-.video:first-of-type > div > div > iframe {
-    width: 500px;
-  }
-  
-  iframe {
-    border-radius: 15px;
-  }
+iframe {
+  border-radius: 15px;
+}
+
+.video{
+  display:flex;
+  flex-direction: column;
+  gap:1em;
+  color:#fff;
+}
+
+
